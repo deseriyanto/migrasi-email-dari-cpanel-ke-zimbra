@@ -12,6 +12,7 @@ $ zmprov < create-account-zimbra.zmp
 4. Tunggu hingga proses import account selesai. Selanjutnya bisa di cek pada Zimbra Admin harusnya semua akun akan import ke zimbra
 
 ## Migrasi Data Email dari cPanel ke Zimbra menggunakan imapsync
+#### Action pada cPanel
 1. Backup file ```shadow``` dengan nama ```shadow_original```
 2. Copy hash code dari akun yang kita sudah tau password nya di dalam file ```shadow``` dan pastekan ke file baru dengan nama password.txt
 3. Sesuaikan file ```create-shadow-reset.sh``` , namadomain = sesuaikan dengan domain TLD, misal example.com
@@ -20,3 +21,7 @@ $ zmprov < create-account-zimbra.zmp
 # chmod +x create-shadow-reset.sh
 # ./create-shadow-reset.sh
 ```
+5. Replace file ```shadow``` dengan file hasil generate script, yaitu ```shadow-reset```
+6. Restart service exim ```service exim restart```
+
+#### Action pada Zimbra
