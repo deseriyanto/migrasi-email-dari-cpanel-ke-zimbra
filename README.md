@@ -25,3 +25,6 @@ $ zmprov < create-account-zimbra.zmp
 6. Restart service exim ```service exim restart```
 
 #### Action pada Zimbra
+
+#### ImapSync
+1.
