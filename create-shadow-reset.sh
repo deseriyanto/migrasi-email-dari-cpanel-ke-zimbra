@@ -7,7 +7,7 @@ rm $LOCATION/shadow-reset
 touch $LOCATION/shadow-reset
 echo "Looping for all users"
 
-DOMAIN=`namadomain` #ubah namadomain sesuai domain yang benar
+DOMAIN="namadomain" #ubah namadomain sesuai domain yang benar
 USER_LIST="shadow_original"
 USERS=`cat $LOCATION/$USER_LIST`
 PASS=`cat $LOCATION/password.txt`
