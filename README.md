@@ -39,13 +39,13 @@ $ zmprov < reset-pass.zmp
 
 #### ImapSync
 1. Download file `imapsync.sh`
-2. Seuaikan untuk SRCHOST dan DSTHOST dan juga pilih command imapsync yang akan digunakan
+2. Seuaikan untuk `SRCHOST` dan `DSTHOST` dan juga pilih command imapsync yang akan digunakan
 3. Download dan edit file `accounts.list` , masukkan email dan password akun yang akan di imapsyng kan
 4. beri akses execute pada file imapsync.sh
 ```
 # chmod +x imapsync.sh
 ```
-5. jalankan script imapsync
+5. jalankan script imapsync, dan tunggu hingga smua selesai
 ```
 ./imapsync.sh
 ```
